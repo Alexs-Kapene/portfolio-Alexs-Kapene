@@ -624,266 +624,185 @@ footer .icon-media a i{
     font-size: 10px;
 }
 
+               /* -------------MEDIA QUERIS TABLETTE */
 
-                            /*---------MEDIA QUERIES-------- */
-    /* @media screen and (max-width:700px) {
 
-        .portfolio .navbar {
-            position: relative;
-            background-color: none;
-            padding: 20px 15px;
-        }
+   @media  screen and (max-width:1024px) {
 
-        .navbar .logo {
-            font-size: 1.2em;
-            font-weight: 900;
-        }
+    .portfolio .navbar {
+        position: relative;
+        background-color: none;
+        padding: 50px;
+    }
 
-        .main-home {
-            position: relative;
-            top: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+    .navbar .logo {
+        font-size: 1.7em;
+        font-weight: 700;
+    }
 
-        .image-profil {
-            position: absolute;
-            top: 0;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-        }
+    .main-home {
+        position: relative;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .image-profil,  .identity  {
-            width: 100%;
-        }
+    .image-profil {
+        position: absolute;
+        top: 0;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
 
-        .identity .text .name {
-            font-size: 1.5rem;
-        }
+    .image-profil,  .identity  {
+        width: 100%;
+    }
 
-        .identity .text h2{
-            font-size: 2rem;
-            text-transform: uppercase;
-        }
+    .identity .text .name {
+        font-size: 1.5rem;
+    }
 
-        .identity .text p {
-            position: relative;
-            font-weight: 500;
-            line-height: 1.3; */
-            /* padding: 0px  0px 5px ;
-        }
+    .identity .text h2{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
 
+    .identity .text p {
+        position: relative;
+        font-weight: 500;
+        line-height: 1.3;
+    }
+
+
+    .circle-animation, .image-profil .image {
+        width: 400px;
+        height: 400px;
+    }
+
+    .identity .text {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .identity .text p {
+        font-size: 13px;
+        text-align: center;
+        padding: 0px  100px;
+    }
+
+    .skills .boite-circle {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .boite-circle .circle {
+        width: 45%;
+        height: 300px;
+    }
+
+    .contenair-box-projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .sunnyside, .gallery-images, .Dr-Norman, .testimonials{
+        width: 45%;
+        height: 250px;
+    }
+
+    .boite-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .boite-section .first-section {
+        gap: 20px;
+        width: 100%;
+    }
+
+    .first-section ul li {
+        font-size: .8em;
+        margin-top: 15px;
+        margin-bottom: 0;
+        color:  rgba(255, 255, 255, .2);
+    }
+
+    .boite-section .second-section {
+        width: 100%;
+    }
+
+    .second-section form {
+        width: 70%;
+    }
+
+    .buttom-submit input {
+        height: 60px;
+        width: 500px;
+    }
     
-        .circle-animation, .image-profil .image {
-            width: 250px;
-            height: 250px;
-        }
+    footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 35px;
+        margin: 20px 0px 70px;
+    }
+    
+    footer span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid  rgba(255, 255, 255, .2);
+        border-radius: 50px;
+        transition: .5s;
+    }
 
-        .identity .text {
-            position: static;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-            text-align: center;
-        }
+    footer .footer-links{
+        display: flex;
+        gap: 15px;
+    }
 
-        .identity .text p {
-            font-size: 13px;
-            text-align: center;
-            padding: 0;
-        }
+    footer .footer-links li a{
+        font-size: .6rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color:  rgba(255, 255, 255, .2);
+    }
 
-        .menu-container{
-            display: block;
-            position: relative;
-        }
+    footer .footer-links li a:hover {
+        color: var(--couleur-animation);
+        border-bottom: 3px solid var(--couleur-animation);
+    }
+}
 
-        .menu-container .menu-icon {
-            display: block;
-        }
+               /* -------------MEDIA QUERIS MOBILE */
 
-        #menu-toggle {
-            display: none;
-        }
+@media  screen and (max-width: 767px) {
 
-        .menu-container .menu-links {
-            position: absolute;
-            top:-30px;
-            right: -300px; 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 250px;
-            height: 350px;
-            background-color: rgba(22, 26, 29, .9);
-            box-shadow: 5px 5px 10px  rgba(0, 0, 0, .5);
-            transition: ease-in .4s;
-        }
-
-        .menu-container .menu-links li{
-            width: 100%;
-            text-align: center;
-            padding: 20px;
-            border-bottom: 1px solid rgba(246, 247, 248, 0.2);;
-          }
-          
-        .menu-container .menu-links li:hover{
-            background-color: rgba(17, 19, 20, 0.5);
-            color: var(--couleur-de-font);
-            border-bottom:none;
-          }
-
-        .menu-container .menu-links li a:hover{
-            background-color: rgba(17, 19, 20, 0.5);
-            color: var(--couleur-de-font);
-            border-bottom:none;
-           
-          }
-          
-        .menu-icon{
-            position: absolute;
-            top: -10px;
-            right: 20px;
-            width: 30px;
-            height: 25px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            transition: all .3s ease-in-out;
-            z-index: 100;
-        }
-
-        .menu-icon div {
-            width: 100%;
-            height: 4px;
-            margin: 4px;
-            background-color: var(--couleur-de-font);
-            border-radius: 5px;
-            transition: all .3s ease-in-out;
-        }
-        #menu-toggle:checked ~ .menu-links {
-            right: -20px;
-          }
-
-        #menu-toggle:checked +  .menu-icon div:nth-child(1) {
-            transform: rotate(45deg) translate(7px, 7px);
-        }
-
-        #menu-toggle:checked +  .menu-icon div:nth-child(2) {
-            transform: translateX(-20px);
-            opacity: 0;
-        }
-
-        #menu-toggle:checked +  .menu-icon div:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-
-
-        .skills {
-            width: 100%;
-            margin-top: 100px;
-            box-sizing: border-box;
-        }
-
-        .skills .boite-circle {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .boite-circle .circle {
-            width: 100%;
-            height: 250px;
-        }
-
-        .contenair-box-projects {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .sunnyside, .gallery-images, .Dr-Norman, .testimonials{
-            width: 100%;
-            height: 250px;
-        }
-        
-        .boite-section {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        .boite-section .first-section {
-            gap: 20px;
-            width: 100%;
-        }
-
-        .first-section ul li {
-            font-size: .8em;
-            margin-top: 15px;
-            margin-bottom: 0;
-            color:  rgba(255, 255, 255, .2);
-        }
-
-        .boite-section .second-section {
-            width: 100%;
-            /* padding: 0px 50px; */
-        /* }
-
-        .second-section form {
-            width: 100%;
-        }
-
-        footer {
-            display: flex;
-            flex-direction: column;
-            row-gap: 35px;
-            margin: 20px 0px 70px;
-        }
-        
-        footer span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-            border: 1px solid  rgba(255, 255, 255, .2);
-            border-radius: 50px;
-            transition: .5s;
-        }
-
-        footer .footer-links{
-            display: flex;
-            gap: 15px;
-        }
-
-        footer .footer-links li a{
-            font-size: .6rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            color:  rgba(255, 255, 255, .2);
-        }
-
-        footer .footer-links li a:hover {
-            color: var(--couleur-animation);
-            border-bottom: 3px solid var(--couleur-animation);
-
-        }
-} */
-
-@media  screen and (max-width:700px) {
-
+    .portfolio {
+      overflow: hidden;
+    }
     .portfolio .navbar {
         position: relative;
         background-color: none;
@@ -932,7 +851,6 @@ footer .icon-media a i{
         position: relative;
         font-weight: 500;
         line-height: 1.3;
-        /* padding: 0px  0px 5px ; */
     }
 
 
@@ -1134,181 +1052,8 @@ footer .icon-media a i{
         border-bottom: 3px solid var(--couleur-animation);
 
     }
-} 
+}
 
-
-
- /*---------MEDIA QUERIES TABLETTE-------- */
-   @media  screen and (max-width:1280px) {
-
-        .portfolio .navbar {
-            position: relative;
-            background-color: none;
-            padding: 50px;
-        }
-
-        .navbar .logo {
-            font-size: 1.7em;
-            font-weight: 700;
-        }
-
-        .main-home {
-            position: relative;
-            top: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .image-profil {
-            position: absolute;
-            top: 0;
-            width: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .image-profil,  .identity  {
-            width: 100%;
-        }
-
-        .identity .text .name {
-            font-size: 1.5rem;
-        }
-
-        .identity .text h2{
-            font-size: 2rem;
-            text-transform: uppercase;
-        }
-
-        .identity .text p {
-            position: relative;
-            font-weight: 500;
-            line-height: 1.3;
-        }
-
-    
-        .circle-animation, .image-profil .image {
-            width: 400px;
-            height: 400px;
-        }
-
-        .identity .text {
-            position: static;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50px;
-            text-align: center;
-        }
-
-        .identity .text p {
-            font-size: 13px;
-            text-align: center;
-            padding: 0px  100px;
-        }
-
-        .skills .boite-circle {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-            padding: 0;
-        }
-
-        .boite-circle .circle {
-            width: 45%;
-            height: 250px;
-            margin: 20px;
-        }
-
-        .contenair-box-projects {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-            padding: 0;
-        }
-
-        .sunnyside, .gallery-images, .Dr-Norman, .testimonials{
-            width: 45%;
-            height: 250px;
-            margin: 20px;
-        }
-
-        .boite-section {
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        .boite-section .first-section {
-            gap: 20px;
-            width: 100%;
-        }
-
-        .first-section ul li {
-            font-size: .8em;
-            margin-top: 15px;
-            margin-bottom: 0;
-            color:  rgba(255, 255, 255, .2);
-        }
-
-        .boite-section .second-section {
-            width: 100%;
-        }
-
-        .second-section form {
-            width: 70%;
-        }
-
-        .buttom-submit input {
-            height: 60px;
-            width: 500px;
-        }
-        
-        footer {
-            display: flex;
-            flex-direction: column;
-            row-gap: 35px;
-            margin: 20px 0px 70px;
-        }
-        
-        footer span {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-            border: 1px solid  rgba(255, 255, 255, .2);
-            border-radius: 50px;
-            transition: .5s;
-        }
-
-        footer .footer-links{
-            display: flex;
-            gap: 15px;
-        }
-
-        footer .footer-links li a{
-            font-size: .6rem;
-            font-weight: 400;
-            text-transform: uppercase;
-            color:  rgba(255, 255, 255, .2);
-        }
-
-        footer .footer-links li a:hover {
-            color: var(--couleur-animation);
-            border-bottom: 3px solid var(--couleur-animation);
-        }
-    }
     
 
                 
