@@ -90,7 +90,7 @@ li {
   border-bottom: 3px solid var(--couleur-animation);
 }
 
-.main-home {
+.section-home {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -433,16 +433,91 @@ li {
   height: 250px;
   border-radius: 8px;
   text-align: center;
-  padding: 35px;
+  /* padding: 35px; */
   border: solid 2px var(--couleur-secondary-background);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
   position: relative;
+  transition: ease-in-out 0.6s;
+}
+#image-gallery,
+#image-e-commerce,
+#image-Dr-Norman,
+#image-sunnyside {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-images:hover {
+  #image-gallery {
+    opacity: 0.05;
+  }
+  .gallery-tittle {
+    display: block;
+    position: absolute;
+    transition: ease-out 0.6s;
+  }
+
+  .links a {
+    color: var(--couleur-de-fond);
+    transition: ease-in-out 0.3s;
+  }
+}
+
+.sunnyside:hover {
+  #image-sunnyside {
+    opacity: 0.05;
+  }
+  .sunnyside-title {
+    display: block;
+    position: absolute;
+    transition: ease-out 0.6s;
+  }
+
+  .links a {
+    color: var(--couleur-de-fond);
+    transition: ease-in-out 0.3s;
+  }
+}
+
+.testimonials:hover {
+  #image-e-commerce {
+    opacity: 0.05;
+  }
+  .e-commerce-title {
+    display: block;
+    position: absolute;
+    transition: ease-out 0.6s;
+  }
+
+  .links a {
+    color: var(--couleur-de-fond);
+    transition: ease-in-out 0.3s;
+  }
+}
+
+.Dr-Norman:hover {
+  #image-Dr-Norman {
+    opacity: 0.05;
+  }
+  .norman-title {
+    display: block;
+    position: absolute;
+    transition: ease-out 0.6s;
+  }
+
+  .links a {
+    color: var(--couleur-de-fond);
+    transition: ease-in-out 0.3s;
+  }
 }
 
 .sunnyside p,
 .gallery-images p,
 .Dr-Norman p,
 .testimonials p {
+  display: none;
   text-transform: capitalize;
   font-size: 1.3rem;
   font-weight: 700;
@@ -454,15 +529,19 @@ li {
 .testimonials .links {
   position: absolute;
   bottom: 15px;
-  right: 35px;
+  right: 20px;
 }
 .links a {
-  margin-left: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 3px;
+  margin-top: 5px;
   color: var(--couleur-de-font);
-}
-
-.links a:hover {
-  color: var(--couleur-animation);
+  background-color: var(--couleur-animation);
+  font-size: 12px;
+  transition: ease-in-out 0.6s;
 }
 
 .contacts {
@@ -644,7 +723,7 @@ footer .icon-media a i {
     font-weight: 700;
   }
 
-  .main-home {
+  .section-home {
     position: relative;
     top: 50px;
     display: flex;
@@ -821,7 +900,7 @@ footer .icon-media a i {
     font-weight: 900;
   }
 
-  .main-home {
+  .section-home {
     position: relative;
     top: 50px;
     display: flex;
